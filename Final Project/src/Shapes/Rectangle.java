@@ -1,35 +1,35 @@
 package Shapes;
 
 public class Rectangle {
-    private double side1;
-    private double side2;
+    private int width;
+    private int length;
     //Default constructor
-    Rectangle(){
-        side1 = 0.0;
-        side2 = 0.0;
+    public Rectangle(){
+        width = 0;
+        length = 0;
     }
     //Constructor with value
-    Rectangle(double s1, double s2){
-        side1 = s1;
-        side2 = s2;
+    public Rectangle(int w, int l){
+        width = w;
+        length = l;
     }
-    public void setSide1(double s){
-        side1 = s;
+    public void setWidth(int w){
+        width = w;
     }
-    public void setSide2(double s){
-        side2 = s;
+    public void setLength(int l){
+        length = l;
     }
-    public double getSide1(){
-        return side1;
+    public int getWidth(){
+        return width;
     }
-    public double getSide2(){
-        return side2;
+    public int getLength(){
+        return length;
     }
-    public double Area(){
-        return side1 * side2;
+    public int Area(){
+        return width * length;
     }
-    public double Primeter(){
-        return (side1 + side2) * 2;
+    public int Primeter(){
+        return (width + length) * 2;
     }
 }
 

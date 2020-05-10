@@ -2,10 +2,12 @@ package Shapes;
 
 public class Circle {
     private double radius;
-    Circle(){
-        radius = 0.0;
+    //Default constructor
+    public Circle(){
+        radius = 0;
     }
-    Circle(double r){
+    //Constructor with value
+    public Circle(double r){
         radius = r;
     }
     public double Area(){
